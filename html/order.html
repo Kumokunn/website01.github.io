@@ -1,11 +1,142 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Order</title>
+    <meta charset="utf-8">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<h1>Order page</h1>
+    
+    <!-- header section start -->
+	
+    <div class="header_section">
+        <img src="../image/logo.png" alt="logo"><br>
+        <div><h2>DisneyLand</h2></div>
+    </div>
+	
+    <!-- header section end -->
+    
+	
+    <!-- main section start -->
+	
+    <div class="container">
+        <h1 class="bigtitle">Information</h1>
+        
+        <!-- menu section start -->
+		
+        <div class="menu_group">
+            <h2 class="title">Tickets</h2>
+            <div class="menu_item">
+                <img src="../image/ticket-1.jpeg" alt="1-Day Ticket">
+                <label>1-Day Ticket</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/ticket-2.jpeg" alt="1-Day Ticket (Child)">
+                <label>1-Day Ticket (Child)</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/ticket-3.jpeg" alt="2-Day Ticket">
+                <label>2-Day Ticket</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+        </div>
+
+        <div class="menu_group">
+            <h2 class="title">Dining</h2>
+            <div class="menu_item">
+                <img src="../image/dining-1.jpeg" alt="Explorer's Semi Buffet">
+                <label>Explorer's Semi Buffet</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/dining-2.jpeg" alt="3-in-1 Park Meal Voucher">
+                <label>3-in-1 Park Meal Voucher</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+        </div>
+
+        <div class="menu_group">
+            <h2 class="title">Hotels</h2>
+            <div class="menu_item">
+                <img src="../image/hotel-1.jpeg" alt="Standard Room">
+                <label>Standard Room</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/hotel-2.jpeg" alt="Deluxe Room">
+                <label>Deluxe Room</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/hotel-3.jpeg" alt="Sea View Room">
+                <label>Sea View Room</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+            <div class="menu_item">
+                <img src="../image/hotel-4.jpeg" alt="Kingdom Club Room">
+                <label>Kingdom Club Room</label>
+                <input type="number" min="0" placeholder="Qty">
+                <button>Add</button>
+            </div>
+        </div>
+		
+        <!-- menu section end -->
+
+        <!-- ordered items section start -->
+		
+        <div class="ordered_items">
+            <h1 class="bigtitle">Ordered Items</h1>
+            <p>Date: <span id="date-time"></span></p>
+            <table>
+                <caption>Order Summary</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- empty for now -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <a href="#" class="undo_link">Undo</a>
+        </div>
+    </div>
+	
+	<!-- ordered items section end -->
+	
+    <!-- main section end -->
+    
+	
+    <!-- footer section start -->
+	
+    <div class="footer_section">
+        <div class="copyright_text">@CityU 2024 – sources of images and text from official website of Hong Kong Disneyland, Wikipedia<br>and Courtesy of Icon pack by Icons8 – designed by <a href="../html/design.html">Lam Lok Yiu</a></div>
+    </div>
+	
+    <!-- footer section end -->
+
+    <script>
+        // Display current date and time
+        document.getElementById('date-time').textContent = new Date().toLocaleString();
+    </script>
 </body>
 </html>
